@@ -65,29 +65,77 @@
         <main>
             <!-- ! sezione learn-about -->
             <section id="learn-about">
-                <div class="testo-learn-about">
-                    <h2>Learn about our <span>Work Culture</span> at MaxCoach</h2>
-                    <p>Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
-                    <small>Have questions? <span>Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></small>
-                </div>
-                <div class="img-learn-about">
-                    <img class="decorazione" src="img/maxcoach-shape-07.png" alt="decorazione">
-                    <img class="img-base" src="img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="zona meeting">
-                    <img class="img-sovrapposta" src="img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg" alt="donna al pc">
+                <div class="contenitore-learn-about">
+                    <div class="testo-learn-about">
+                        <h4>Everything in <strong>maxcoach</strong></h4>
+                        <h2>Learn about our <span>Work Culture</span> at MaxCoach</h2>
+                        <p>Spend some time to visit our website or head office and discover our current courses, enrollment procedure, and registration deadline. We're opening new classes every beginning of each month.</p>
+                        <small>Have questions? <span>Get Free Guide <i class="fas fa-long-arrow-alt-right"></i></span></small>
+                    </div>
+                    <div class="img-learn-about">
+                        <img class="img-base" src="img/stock-full-hd-10-ohki1ayywq3cqutettrncduujpoaorifqu4relt2ts.jpg" alt="zona meeting">
+                        <img class="img-sovrapposta" src="img/about-us-01-ohkia3qg98rq9vg3s0mn2hkflr1migdqdw370qnegc.jpg" alt="donna al pc">
+                        <img class="decorazione-1" src="img/maxcoach-shape-07.png" alt="decorazione-1">
+                        <img class="decorazione-2" src="img/maxcoach-shape-02.png" alt="decorazione-2">
+                    </div>
                 </div>
             </section>
             <!-- ! /sezione learn-about --> 
 
             <!-- ! sezione numeri -->
-            <section id="numeri"></section>
+            <section id="numeri">
+                <div class="contenitore-numeri">
+                    <div class="learners">
+                        129 <span><i class="fas fa-plus"></i></span>
+                        <h4>enrolled learners</h4>
+                    </div>
+                    <div class="finished-sessions">
+                        80
+                        <h4>finished sessions</h4>
+                    </div>
+                    <div class="satisfaction-rate">
+                        4 <span><i class="fas fa-percent"></i></span>
+                        <h4>satisfaction rate</h4>
+                    </div>
+                </div>
+            </section>
             <!-- ! /sezione numeri -->
 
             <!-- ! sezione upgrade-skills -->
-            <section id="upgrade-skills"></section>
+            <section id="upgrade-skills">
+                <div class="contenitore-upgrade-skills">
+                    <div class="upgrade-skills-sx">
+                        <img class="img-base" src="img/stock-full-hd-11-670x450.jpg" alt="ragazza al telefono">
+                        <img class="logo-youtube" src="img/icon-youtube-play.png" alt="logo youtube">
+                        <img class="decorazione-3" src="img/maxcoach-shape-05-100x100.png" alt="decorazione-3">
+                        <img class="decorazione-2" src="img/maxcoach-shape-07-100x100.png" alt="decorazione-2">
+                    </div>
+                    <div class="upgrade-skills-dx">
+                        <h4>How we work</h4>
+                        <h2>Upgrade Your Skills <span>Upgrade Your Life</span></h2>
+                        <p>Opening up more opportunities in front of you to get the ticket to more enjoyable doo in life. Getting equipped with new skills for new sets of insights into your career. MaxCoach accompany learners in every stage of learning.</p>
+                        <small>Download free guidebook <i class="fas fa-long-arrow-alt-right"></i></small>
+                    </div>
+                </div>
+            </section>
             <!-- ! /sezione upgrade-skills -->
 
             <!-- ! sezione online-courses -->
-            <section id="online-courses"></section>
+            <section id="online-courses">
+                <div class="contenitore-online-courses">
+                    <h4>join maxcoach at best</h4>
+                    <h2>Latest Online <span>Courses</span></h2>
+
+                    <div class="box-corsi">
+                        <div v-for="corso in corsi">
+                            <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
+
+                            <h3>{{ corso.costo }}</h3>
+                            <h4>{{ corso.descrizione }}</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- ! /sezione online-courses -->
 
             <!-- ! sezione people -->

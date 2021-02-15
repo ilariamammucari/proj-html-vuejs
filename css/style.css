@@ -24,11 +24,11 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 9999;
 }
 
 header .header-sx {
-    width: calc(100% / 3);
+    width: 550px;
     display: flex;
     justify-content: space-between;
     line-height: 5rem;
@@ -37,7 +37,7 @@ header .header-sx {
 }
 
 header .header-center {
-    width: calc(100% / 3);
+    flex-grow: 1;
     text-align: center;
     line-height: 5rem;
 }
@@ -47,7 +47,7 @@ header .header-center img {
 }
 
 header .header-dx {
-    width: calc(100% / 3);
+    width: 550px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,42 +143,177 @@ header .header-dx .casella-input input {
 }
 
 /* * main */
-main #learn-about {
+main section {
     width: 100%;
-    padding-top: 10rem;
     padding-bottom: 5rem;
-    display: flex;
 }
 
-main #learn-about .testo-learn-about {
-    width: calc(100% / 4);
-    margin-left: 15rem;
+main section h4 {
+    font-weight: normal;
+    color: #6c6c6b;
+    line-height: 1.6;
 }
 
-main #learn-about .testo-learn-about span {
+main section span {
     color: #1fad95;
 }
 
-main #learn-about .testo-learn-about h2 {
+main section h2 {
     font-size: 2rem;
 }
 
+main #learn-about .contenitore-learn-about,
+main #upgrade-skills .contenitore-upgrade-skills {
+    width: 1200px;
+    padding-top: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main #learn-about .testo-learn-about {
+    width: calc(100% / 3);
+}
+
+
 main #learn-about .img-learn-about {
     width: calc(100% / 2);
-    text-align: right;
     position: relative;
+}
+
+main #learn-about .img-learn-about .img-base {
+    position: relative;
+    z-index: 0;
 }
 
 
 main #learn-about .img-learn-about .img-sovrapposta {
     position: absolute;
     right: -3rem;
-    top: -4rem;
+    top: -6rem;
+    z-index: 3;
 }
 
-main #learn-about .img-learn-about .decorazione {
+main #learn-about .img-learn-about .decorazione-1 {
     position: absolute;
-    top: -2.8rem;
+    top: -6rem;
     right: 3rem;
+    z-index: -1;
 }
 
+main #learn-about .img-learn-about .decorazione-2 {
+    position: absolute;
+    bottom: -5rem;
+    right: 5rem;
+}
+
+main #numeri .contenitore-numeri {
+    width: 100%;
+    color: #1fad95;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+main #numeri .contenitore-numeri span i {
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+
+main #numeri .finished-sessions,
+main #numeri .satisfaction-rate {
+    padding-left: 8rem;
+}
+
+main #numeri .learners h4,
+main #numeri .finished-sessions h4,
+main #numeri .satisfaction-rate h4 {
+    font-size: 1rem;
+    color: #8c8d8a;
+    padding-top: 1rem;
+}
+
+main #upgrade-skills .upgrade-skills-sx {
+    width: (100% / 2);
+    position: relative;
+}
+
+main #upgrade-skills .upgrade-skills-sx .img-base {
+    width: 90%;
+    z-index: 3;
+}
+
+main #upgrade-skills .upgrade-skills-sx .logo-youtube {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main #upgrade-skills .upgrade-skills-sx .decorazione-3 {
+    position: absolute;
+    left: -4rem;
+    top: 2rem;
+    z-index: -1;
+}
+
+main #upgrade-skills .upgrade-skills-sx .decorazione-2 {
+    position: absolute;
+    right: 3.3rem;
+    bottom: -4rem;
+    z-index: -1;
+}
+
+main #upgrade-skills .upgrade-skills-dx {
+    width: calc(100% / 2);
+    padding-left: 3rem;
+}
+
+main #online-courses .contenitore-online-courses {
+    width: 1200px;
+    margin: auto;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+
+main #online-courses h4{
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+main #online-courses h2 span {
+    font-weight: normal;
+}
+
+main #online-courses .box-corsi {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main #online-courses .box-corsi > div {
+    width: calc(100% / 3);
+}
+
+main #online-courses .box-corsi img {
+    width: 90%;
+    border-radius: 2rem;
+    margin-top: 3rem;
+}
+
+main #online-courses .box-corsi h3 {
+    color: #1fad95;
+    padding: 1rem 0
+}
+
+main #online-courses .box-corsi h4 {
+    text-transform: none;
+    font-weight: bold;
+}
