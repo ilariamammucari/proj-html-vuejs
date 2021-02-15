@@ -127,8 +127,16 @@
                     <h2>Latest Online <span>Courses</span></h2>
 
                     <div class="box-corsi">
-                        <div v-for="corso in corsi">
+                        <div v-if="corso.costo != '$0.00'" v-for="corso in corsi">
                             <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
+
+                            <h3>{{ corso.costo }}</h3>
+                            <h4>{{ corso.descrizione }}</h4>
+                        </div>
+                        <div v-if="corso.costo == '$0.00'" v-for="corso in corsi">
+                            <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
+
+                            <div class="free">Free</div>
 
                             <h3>{{ corso.costo }}</h3>
                             <h4>{{ corso.descrizione }}</h4>
@@ -139,7 +147,31 @@
             <!-- ! /sezione online-courses -->
 
             <!-- ! sezione people -->
-            <section id="people"></section>
+            <section id="people">
+                <div class="contenitore-people">
+                    <div class="testo-people">
+                        <h4>Testimonials</h4>
+                        <h2>Why Do People<span> *Hearts*</span> Us?</h2>
+                        <p>Seeking for verbals of our service quality? find them here. Everything is trasparent and straightforward for your sense of justification.</p>
+                        <small>view all <i class="fas fa-long-arrow-alt-right"></i></small>
+                    </div>
+
+                    <div class="card-people">
+                        <div class="box-card">
+                            <h4>Professional team of specialists and passionate mentors at reach</h4>
+
+                            <h4>I need to get a certification for English proficiency and MaxCoach is my best choice. Their tutors are smart ad professional when dealing with students.</h4>
+
+                            <div class="avatar">
+                                <img src="img/testimonial-avata-01.jpg" alt="avatar">
+                                <h5>Madley Pondor
+                                    <small>/ IT Specialis</small>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <!-- ! /sezione people -->
 
             <!-- ! sezione transform-you -->

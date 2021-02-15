@@ -162,8 +162,11 @@ main section h2 {
     font-size: 2rem;
 }
 
+
+/* * sezione learn-about*/
 main #learn-about .contenitore-learn-about,
-main #upgrade-skills .contenitore-upgrade-skills {
+main #upgrade-skills .contenitore-upgrade-skills,
+main #people .contenitore-people {
     width: 1200px;
     padding-top: 10rem;
     margin: auto;
@@ -208,6 +211,8 @@ main #learn-about .img-learn-about .decorazione-2 {
     right: 5rem;
 }
 
+
+/* * sezione numeri */
 main #numeri .contenitore-numeri {
     width: 100%;
     color: #1fad95;
@@ -238,6 +243,8 @@ main #numeri .satisfaction-rate h4 {
     padding-top: 1rem;
 }
 
+
+/* * sezione upgrade-skills */
 main #upgrade-skills .upgrade-skills-sx {
     width: (100% / 2);
     position: relative;
@@ -274,6 +281,8 @@ main #upgrade-skills .upgrade-skills-dx {
     padding-left: 3rem;
 }
 
+
+/* * sezione online-courses */
 main #online-courses .contenitore-online-courses {
     width: 1200px;
     margin: auto;
@@ -296,6 +305,7 @@ main #online-courses .box-corsi {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 main #online-courses .box-corsi > div {
@@ -317,3 +327,57 @@ main #online-courses .box-corsi h4 {
     text-transform: none;
     font-weight: bold;
 }
+
+main #online-courses .box-corsi .free {
+    width: 4rem;
+    height: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2rem;
+    color: #fff;
+    background-color: coral;
+    position: absolute;
+    right: 2rem;
+    top: 4rem;
+}
+
+/* * sezione people */
+main #people .testo-people {
+    width: calc(100% / 3);
+}
+
+main #people .card-people {
+    width: calc(100% / 2);
+}
+
+main #people .card-people .box-card {
+    width: 100%;
+    height: 300px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+    padding: 2rem 4rem;
+}
+
+main #people .card-people .box-card h4:first-child {
+    color: black;
+    font-weight: bold;
+}
+
+main #people .card-people .box-card .avatar {
+    display: flex;
+    align-items: center;
+}
+
+main #people .card-people .box-card .avatar img {
+    width: 20%;
+    margin-top: 2rem;
+    border-radius: 50%;
+}
+
+main #people .card-people .box-card .avatar h5 {
+    padding-left: 2rem;
+}
+
+main #people .card-people .box-card .avatar h5 small {
+    color: #8c8d8a;
+}
+
