@@ -140,6 +140,7 @@ header .header-dx .casella-input input {
 .jumbo .testo-jumbo button:hover {
     color: #fff;
     background-color: #1fad95;
+    cursor: pointer;
 }
 
 /* * main */
@@ -166,7 +167,8 @@ main section h2 {
 /* * sezione learn-about*/
 main #learn-about .contenitore-learn-about,
 main #upgrade-skills .contenitore-upgrade-skills,
-main #people .contenitore-people {
+main #people .contenitore-people,
+main #transform-you .contenitore-transform-you {
     width: 1200px;
     padding-top: 10rem;
     margin: auto;
@@ -175,12 +177,16 @@ main #people .contenitore-people {
 }
 
 
-main #learn-about .testo-learn-about {
+main #learn-about .testo-learn-about,
+main #online-courses .box-corsi > div,
+main #people .testo-people {
     width: calc(100% / 3);
 }
 
 
-main #learn-about .img-learn-about {
+main #learn-about .img-learn-about,
+main #upgrade-skills .upgrade-skills-sx,
+main #transform-you .img-transform-you {
     width: calc(100% / 2);
     position: relative;
 }
@@ -245,11 +251,6 @@ main #numeri .satisfaction-rate h4 {
 
 
 /* * sezione upgrade-skills */
-main #upgrade-skills .upgrade-skills-sx {
-    width: (100% / 2);
-    position: relative;
-}
-
 main #upgrade-skills .upgrade-skills-sx .img-base {
     width: 90%;
     z-index: 3;
@@ -308,14 +309,11 @@ main #online-courses .box-corsi {
     position: relative;
 }
 
-main #online-courses .box-corsi > div {
-    width: calc(100% / 3);
-}
 
 main #online-courses .box-corsi img {
     width: 90%;
     border-radius: 2rem;
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 main #online-courses .box-corsi h3 {
@@ -326,6 +324,13 @@ main #online-courses .box-corsi h3 {
 main #online-courses .box-corsi h4 {
     text-transform: none;
     font-weight: bold;
+    padding-bottom: 3rem;
+}
+
+main #online-courses .box-corsi > div:hover {
+    border-radius: 1rem;
+    background-color: #e2e2e2;
+    cursor: pointer;
 }
 
 main #online-courses .box-corsi .free {
@@ -342,10 +347,6 @@ main #online-courses .box-corsi .free {
 }
 
 /* * sezione people */
-main #people .testo-people {
-    width: calc(100% / 3);
-}
-
 main #people .card-people {
     width: calc(100% / 2);
 }
@@ -353,7 +354,7 @@ main #people .card-people {
 main #people .card-people .box-card {
     width: 100%;
     height: 300px;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
     padding: 2rem 4rem;
 }
 
@@ -380,4 +381,51 @@ main #people .card-people .box-card .avatar h5 {
 main #people .card-people .box-card .avatar h5 small {
     color: #8c8d8a;
 }
+
+
+/* * sezione transform-you */
+main #transform-you .testo-transform-you {
+    width: calc(100% / 2);
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+main #transform-you .img-transform-you {
+    text-align: right;
+}
+
+main #transform-you .img-transform-you .decorazione-3 {
+    position: absolute;
+    left: -2rem;
+    bottom: 9rem;
+}
+
+main #transform-you .img-transform-you .decorazione-1 {
+    position: absolute;
+    bottom: -5rem;
+    right: 9rem;
+    z-index: -1;
+}
+
+main #transform-you .img-transform-you .decorazione-4 {
+    position: absolute;
+    left: -9rem;
+    bottom: 0;
+}
+
+main #transform-you .testo-transform-you {
+    padding-top: 5rem;
+}
+
+main #transform-you .testo-transform-you button {
+    color: #fff;
+    font-weight: bold;
+    background-color: #1fad95;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
 
