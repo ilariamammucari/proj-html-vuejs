@@ -17,11 +17,48 @@
     <div id="root" class="contenitore">
 
         <!-- *header -->
-        <header></header>
+        <header>
+            <!-- ! header-sx -->
+            <div class="header-sx">
+                <div class="elementi-header-sx" v-for="elementi in listaHeaderSx">
+                    {{ elementi }}
+                    <i class="fas fa-angle-down"></i>
+                </div>
+            </div>
+            <!-- ! /header-sx -->
+
+            <!-- ! header-center -->
+            <div class="header-center">
+                <img src="img/dark-logo.png" alt="Logo">
+            </div>
+            <!-- ! /header-center -->
+
+            <!-- ! header-dx -->
+            <div class="header-dx">
+                <i class="fas fa-shopping-cart">
+                    <span class="acquisti-carrello">0</span>
+                </i>
+                <i class="far fa-user-circle"></i>
+                <div class="casella-input">
+                    <input type="text" placeholder="Search..">
+                </div>
+                <i class="fas fa-search"></i>
+            </div>
+            <!-- ! /header-dx -->
+        </header>
         <!-- * /header -->
 
         <!-- * jumbotron -->
-        <div class="jumbo"></div>
+        <div class="jumbo">
+            <div class="testo-jumbo">
+                <h2>Commence Business</h2>
+                <h1>Distant Mentoring Program</h1>
+                <button>
+                    Download free guidebook
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </button>
+            </div>
+        </div>
         <!-- * /jumbotron -->
 
         <!-- * main -->

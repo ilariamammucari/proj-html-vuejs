@@ -1,3 +1,4 @@
+/* * generali */
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +8,133 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #141423;
+}
+
+.contenitore {
+    width: 100%;
+    height: 100vh;
+}
+
+/* * header */
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+
+header .header-sx {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: space-between;
+    line-height: 5rem;
+    padding-left: 8rem;
+    cursor: pointer;
+}
+
+header .header-center {
+    width: calc(100% / 3);
+    text-align: center;
+    line-height: 5rem;
+}
+
+header .header-center img {
+    width: 30%;
+}
+
+header .header-dx {
+    width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 8rem;
+    position: relative;
+}
+
+header .header-dx i:first-child {
+    position: relative;
+}
+
+header .header-dx .acquisti-carrello {
+    width: 1rem;
+    height: 1rem;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1rem;
+    border-radius: 50%;
+    background-color: #2fab97;
+    position: absolute;
+    right: -0.6rem;
+    top: -0.5rem;
+}
+
+header .header-dx i {
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    cursor: pointer;
+}
+
+header .header-dx i:last-child {
+    position: absolute;
+    right: 16rem;
+    color: #2fab97;
+}
+
+header .header-dx .casella-input {
+    padding-left: 2rem;
+}
+
+header .header-dx .casella-input input {
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    padding: 1rem 2rem;
+}
+
+/* * jumbotron */
+.jumbo {
+    width: 100%;
+    height: 700px;
+    margin-top: 5rem;
+    color: #fff;
+    background-image: url('../img/home-3-hero-bg.jpg');
+    position: relative;
+}
+
+.jumbo .testo-jumbo {
+    text-align: center;
+    line-height: 1.6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbo .testo-jumbo h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+}
+
+.jumbo .testo-jumbo button {
+    color: #1fad95;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 3rem;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.jumbo .testo-jumbo button i {
+    vertical-align: middle;
+}
+
+.jumbo .testo-jumbo button:hover {
+    color: #fff;
+    background-color: #1fad95;
 }
