@@ -43,7 +43,7 @@ header .header-center {
 }
 
 header .header-center img {
-    width: 30%;
+    height: 30%;
 }
 
 header .header-dx {
@@ -280,10 +280,16 @@ main #upgrade-skills .upgrade-skills-sx .decorazione-2 {
 main #upgrade-skills .upgrade-skills-dx {
     width: calc(100% / 2);
     padding-left: 3rem;
+    padding-right: 5rem;
 }
 
 
 /* * sezione online-courses */
+main #online-courses {
+    background-color: #e2e2e0;
+
+}
+
 main #online-courses .contenitore-online-courses {
     width: 1200px;
     margin: auto;
@@ -302,18 +308,26 @@ main #online-courses h2 span {
 }
 
 main #online-courses .box-corsi {
-    width: 1200px;
+    width: 100%;
     margin: auto;
+    margin-top: 2rem;
     display: flex;
+    justify-content: center;
+}
+
+main #online-courses .box-corsi .card {
+    width: calc(100% / 3);
+    background-color:#fff;
+    border-radius: 0.3rem;
     justify-content: space-between;
+    margin-left: 1rem;
     position: relative;
 }
 
 
 main #online-courses .box-corsi img {
-    width: 90%;
-    border-radius: 2rem;
-    margin-top: 4rem;
+    width: 100%;
+    border-radius: 0.3rem;
 }
 
 main #online-courses .box-corsi h3 {
@@ -327,9 +341,9 @@ main #online-courses .box-corsi h4 {
     padding-bottom: 3rem;
 }
 
-main #online-courses .box-corsi > div:hover {
-    border-radius: 1rem;
-    background-color: #e2e2e2;
+main #online-courses .box-corsi .card:hover {
+    border-radius: 0.3rem;
+    background-color: #f5f3f3;
     cursor: pointer;
 }
 
@@ -342,8 +356,8 @@ main #online-courses .box-corsi .free {
     color: #fff;
     background-color: coral;
     position: absolute;
-    right: 2rem;
-    top: 4rem;
+    right: 0;
+    top: 0;
 }
 
 /* * sezione people */

@@ -16,7 +16,7 @@ var app = new Vue({
             {
                 immagine: '3',
                 costo: '$19.00',
-                descrizione: 'IOpening Programming for Everyone: Python'
+                descrizione: 'Open Programming for Everyone: Python'
             }
         ]
     }

@@ -127,13 +127,14 @@
                     <h2>Latest Online <span>Courses</span></h2>
 
                     <div class="box-corsi">
-                        <div v-if="corso.costo != '$0.00'" v-for="corso in corsi">
+
+                        <div class="card" v-if="corso.costo != '$0.00'" v-for="corso in corsi">
                             <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
 
                             <h3>{{ corso.costo }}</h3>
                             <h4>{{ corso.descrizione }}</h4>
                         </div>
-                        <div v-if="corso.costo == '$0.00'" v-for="corso in corsi">
+                        <div class="card" v-else>
                             <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
 
                             <div class="free">Free</div>
@@ -141,6 +142,7 @@
                             <h3>{{ corso.costo }}</h3>
                             <h4>{{ corso.descrizione }}</h4>
                         </div>
+
                     </div>
                 </div>
             </section>
