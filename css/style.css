@@ -80,11 +80,14 @@ header .header-dx i {
 
 header .header-dx i:last-child {
     position: absolute;
-    right: 16rem;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
     color: #2fab97;
 }
 
 header .header-dx .casella-input {
+    position: relative;
     padding-left: 2rem;
 }
 
@@ -138,3 +141,44 @@ header .header-dx .casella-input input {
     color: #fff;
     background-color: #1fad95;
 }
+
+/* * main */
+main #learn-about {
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    display: flex;
+}
+
+main #learn-about .testo-learn-about {
+    width: calc(100% / 4);
+    margin-left: 15rem;
+}
+
+main #learn-about .testo-learn-about span {
+    color: #1fad95;
+}
+
+main #learn-about .testo-learn-about h2 {
+    font-size: 2rem;
+}
+
+main #learn-about .img-learn-about {
+    width: calc(100% / 2);
+    text-align: right;
+    position: relative;
+}
+
+
+main #learn-about .img-learn-about .img-sovrapposta {
+    position: absolute;
+    right: -3rem;
+    top: -4rem;
+}
+
+main #learn-about .img-learn-about .decorazione {
+    position: absolute;
+    top: -2.8rem;
+    right: 3rem;
+}
+
