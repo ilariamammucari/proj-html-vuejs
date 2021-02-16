@@ -105,6 +105,7 @@ header .header-dx .casella-input input {
     margin-top: 5rem;
     color: #fff;
     background-image: url('../img/home-3-hero-bg.jpg');
+    background-position: center;
     position: relative;
 }
 
@@ -161,6 +162,15 @@ main section span {
 
 main section h2 {
     font-size: 2rem;
+}
+
+main section h2 {
+    line-height: 1.6;
+}
+
+main section p {
+    line-height: 2;
+    padding-bottom: 3rem;
 }
 
 
@@ -573,7 +583,6 @@ main #subscribe .subscribe-testo p {
 
 main #subscribe .input-subscribe {
     width: 100%;
-    padding-top: 3rem;
 }
 
 main #subscribe .input-subscribe input {
@@ -665,7 +674,7 @@ footer .copyright {
 .bottoncino {
     position: absolute;
     right: 3rem;
-    top: 345rem;
+    top: 350rem;
     z-index: 998;
 }
 .bottoncino i {
