@@ -27,32 +27,27 @@ header {
     z-index: 9999;
 }
 
-header .header-sx {
-    width: 550px;
+header .header-sx,
+header .header-dx  {
+    width: calc(100% / 3);
     display: flex;
-    justify-content: space-between;
-    line-height: 5rem;
-    padding-left: 8rem;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+}
+
+header .header-sx .elementi-header-sx:not(:first-child) {
+    padding-left: 1rem;
 }
 
 header .header-center {
     flex-grow: 1;
     text-align: center;
-    line-height: 5rem;
+    align-self: center;
 }
 
 header .header-center img {
-    height: 30%;
-}
-
-header .header-dx {
-    width: 550px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 8rem;
-    position: relative;
+    height: 1.6rem;
 }
 
 header .header-dx i:first-child {
