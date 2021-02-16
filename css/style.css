@@ -444,10 +444,14 @@ main #people .card-people .box-card .avatar h5,
 main #people .card-people .box-card-sotto .avatar h5,
 main #people .card-people .box-card-sopra .avatar h5 {
     padding-left: 2rem;
+    text-transform: uppercase;
 }
 
-main #people .card-people .box-card .avatar h5 small {
+main #people .card-people .box-card .avatar h5 small,
+main #people .card-people .box-card-sotto .avatar h5 small,
+main #people .card-people .box-card-sopra .avatar h5 small {
     color: #8c8d8a;
+    text-transform: none;
 }
 
 

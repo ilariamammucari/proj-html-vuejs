@@ -64,6 +64,20 @@ var app = new Vue({
             }
         ],
         esplora: ['Start here', 'Blog', 'About Us', 'Success story', 'Courses', 'Contact us'],
-        informazioni: ['Membership', 'Purchase guide', 'Privacy polocy', 'Terms of service']
+        informazioni: ['Membership', 'Purchase guide', 'Privacy polocy', 'Terms of service'],
+        valoreEmail: '',
+        emails: []
+    },
+    methods: {
+        salvaEmails(){
+            if ( this.valoreEmail.length < 5 || !this.valoreEmail.includes('@') || !this.valoreEmail.includes('.it') && !this.valoreEmail.includes('.com')){
+                alert('Inserisci un\'email corretta! l\'email deve contenere: almeno cinque caratteri, "@" e ".com, .it"')
+            } else if ( !this.emails.includes(this.valoreEmail) ) {
+                this.emails.push(this.valoreEmail.toLowerCase());
+                this.emails.sort();
+            }
+            this.valoreEmail = ''
+            console.log(this.emails);
+        }
     }
 });
