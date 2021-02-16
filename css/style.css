@@ -273,6 +273,13 @@ main #upgrade-skills .upgrade-skills-sx .decorazione-2 {
     z-index: -1;
 }
 
+main #upgrade-skills .upgrade-skills-sx .decorazione-5 {
+    position: absolute;
+    left: -5rem;
+    top: -8.5rem;
+    z-index: -2;
+}
+
 main #upgrade-skills .upgrade-skills-dx {
     width: calc(100% / 2);
     padding-left: 3rem;
@@ -439,6 +446,13 @@ main #transform-you .img-transform-you .decorazione-4 {
     position: absolute;
     left: -9rem;
     bottom: 0;
+}
+
+main #transform-you .img-transform-you .decorazione-5 {
+    position: absolute;
+    left: 1rem;
+    top: -2rem;
+    z-index: -2;
 }
 
 main #transform-you .testo-transform-you {
