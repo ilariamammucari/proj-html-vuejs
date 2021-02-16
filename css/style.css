@@ -292,9 +292,7 @@ main #upgrade-skills .upgrade-skills-dx {
 
 
 /* * sezione online-courses */
-main #online-courses,
-main #blog {
-    background-color: #e2e2e0;
+main #online-courses {
     margin-top: 3rem;
 
 }
@@ -329,7 +327,8 @@ main #blog .box-blogs {
 }
 
 main #online-courses .box-corsi .card {
-    background-color:#fff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s linear;
 }
 
 main #online-courses .box-corsi .card,
@@ -347,6 +346,7 @@ main #online-courses .box-corsi img {
     border-radius: 0.3rem;
 }
 
+
 main #online-courses .box-corsi h3 {
     color: #1fad95;
     padding: 1rem 0
@@ -356,6 +356,11 @@ main #online-courses .box-corsi h4 {
     text-transform: none;
     font-weight: bold;
     padding-bottom: 1rem;
+    transition: all 0.3s linear;
+}
+
+main #online-courses .box-corsi h4:hover {
+    color: #1fad95;
 }
 
 main #online-courses .box-corsi .card .box-lezioni,
@@ -368,7 +373,7 @@ main #blog .box-blogs .blog .box-dettagli {
 
 main #online-courses .box-corsi .card:hover {
     border-radius: 0.3rem;
-    background-color: #f5f3f3;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }
 
@@ -507,7 +512,16 @@ main #transform-you .testo-transform-you button {
     cursor: pointer;
 }
 
+main #transform-you .testo-transform-you button:hover,
+main #subscribe .input-subscribe button:hover {
+    background-color: #3a3a53;
+}
+
 /* * sezione blog */
+main #blog {
+    background-color: #e2e2e0;
+    margin-top: 3rem;
+}
 main #blog .box-blogs {
     width: 100%;
     display: flex;
@@ -527,6 +541,11 @@ main #blog .blog h3 {
 main #blog .blog img {
     width: 95%;
     border-radius: 0.3rem;
+}
+
+main #blog .box-blogs h3:hover {
+    cursor: pointer;
+    color: #1fad95;
 }
 
 main #blog .box-blogs .blog .box-dettagli {
@@ -574,6 +593,7 @@ main #subscribe .input-subscribe button {
     padding: 1rem;
     cursor: pointer;
 }
+
 
 main #subscribe .decorazione-3 {
     position: absolute;

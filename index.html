@@ -131,6 +131,7 @@
                     <div class="box-corsi">
 
                         <div class="card" v-if="corso.costo != '$0.00'" v-for="corso in corsi">
+
                             <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
 
                             <h3>{{ corso.costo }}</h3>
