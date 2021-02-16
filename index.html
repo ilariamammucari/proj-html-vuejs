@@ -133,6 +133,17 @@
 
                             <h3>{{ corso.costo }}</h3>
                             <h4>{{ corso.descrizione }}</h4>
+
+                            <div class="box-lezioni">
+                                <div class="lezioni">
+                                    <i class="far fa-file-alt"></i>
+                                    {{ corso.lezioni }}
+                                </div>
+                                <div class="studenti">
+                                    <i class="far fa-user"></i>
+                                    {{ corso.studenti }}
+                                </div>
+                            </div>
                         </div>
                         <div class="card" v-else>
                             <img :src="'img/corso-' + corso.immagine + '.jpg'" :alt="corso.descrizione">
@@ -141,6 +152,17 @@
 
                             <h3>{{ corso.costo }}</h3>
                             <h4>{{ corso.descrizione }}</h4>
+
+                            <div class="box-lezioni">
+                                <div class="lezioni">
+                                    <i class="far fa-file-alt"></i>
+                                    {{ corso.lezioni }}
+                                </div>
+                                <div class="studenti">
+                                    <i class="far fa-user"></i>
+                                    {{ corso.studenti }}
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -212,6 +234,16 @@
                             <h4>{{ blog.tipo }}</h4>
                             <h3>{{ blog.titolo }}</h3>
     
+                            <div class="box-dettagli">
+                                <div class="calendario">
+                                    <i class="far fa-calendar"></i>
+                                    {{ blog.calendario }}
+                                </div>
+                                <div class="visualizzazioni">
+                                    <i class="far fa-eye"></i>
+                                    {{ blog.visualizzazioni }}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

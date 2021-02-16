@@ -312,7 +312,8 @@ main #online-courses h2 span {
     font-weight: normal;
 }
 
-main #online-courses .box-corsi {
+main #online-courses .box-corsi,
+main #blog .box-blogs {
     width: 100%;
     margin: auto;
     margin-top: 2rem;
@@ -321,8 +322,12 @@ main #online-courses .box-corsi {
 }
 
 main #online-courses .box-corsi .card {
-    width: calc(100% / 3);
     background-color:#fff;
+}
+
+main #online-courses .box-corsi .card,
+main #blog .box-blogs .blog {
+    width: calc(100% / 3);
     border-radius: 0.3rem;
     justify-content: space-between;
     margin-left: 1rem;
@@ -343,6 +348,14 @@ main #online-courses .box-corsi h3 {
 main #online-courses .box-corsi h4 {
     text-transform: none;
     font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+main #online-courses .box-corsi .card .box-lezioni,
+main #blog .box-blogs .blog .box-dettagli {
+    display: flex;
+    justify-content: space-around;
+    color: #b1b1b1;
     padding-bottom: 3rem;
 }
 
@@ -460,10 +473,22 @@ main #blog .blog {
     line-height: 1.6;
 }
 
+main #blog .blog h3 {
+    padding-right: 4rem;
+}
+
 main #blog .blog img {
     width: 95%;
     border-radius: 0.3rem;
 }
+
+main #blog .box-blogs .blog .box-dettagli {
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-right: 2rem;
+}
+
+
 
 /* * sezione subscribe */
 main #subscribe {
@@ -573,7 +598,7 @@ footer .copyright {
 .bottoncino {
     position: absolute;
     right: 3rem;
-    top: 336rem;
+    top: 345rem;
     z-index: 998;
 }
 .bottoncino i {
