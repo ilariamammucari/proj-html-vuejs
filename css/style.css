@@ -285,12 +285,16 @@ main #upgrade-skills .upgrade-skills-dx {
 
 
 /* * sezione online-courses */
-main #online-courses {
+main #online-courses,
+main #blog {
     background-color: #e2e2e0;
+    margin-top: 3rem;
 
 }
 
-main #online-courses .contenitore-online-courses {
+main #online-courses .contenitore-online-courses,
+main #blog .contenitore-blog,
+main #subscribe .contenitore-subscribe  {
     width: 1200px;
     margin: auto;
     padding-top: 5rem;
@@ -442,4 +446,64 @@ main #transform-you .testo-transform-you button {
     cursor: pointer;
 }
 
+/* * sezione blog */
+main #blog .box-blogs {
+    width: 100%;
+    display: flex;
+}
 
+main #blog .blog {
+    width: calc(100% / 3);
+    padding-top: 3rem;
+    text-align: left;
+    line-height: 1.6;
+}
+
+main #blog .blog img {
+    width: 95%;
+    border-radius: 0.3rem;
+}
+
+/* * sezione subscribe */
+main #subscribe {
+    position: relative;
+    padding-bottom: 5rem;
+}
+
+main #subscribe .subscribe-testo {
+    width: 100%;
+    padding: 0 23rem;
+}
+
+main #subscribe .subscribe-testo p {
+    padding-top: 1rem;
+}
+
+main #subscribe .input-subscribe {
+    width: 100%;
+    padding-top: 3rem;
+}
+
+main #subscribe .input-subscribe input {
+    padding: 1rem;
+    padding-right: 20rem;
+    outline: none;
+    border: none;
+    background-color: #e2e2e0;
+}
+
+main #subscribe .input-subscribe button {
+    color: #fff;
+    background-color: #2fab95;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+main #subscribe .decorazione-3 {
+    position: absolute;
+    right: 20rem;
+    top: 8rem;
+}

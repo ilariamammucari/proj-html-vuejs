@@ -201,11 +201,39 @@
 
             <!--! sezione blog -->
             <section id="blog">
+                <div class="contenitore-blog">
+                    <h4>Read for more joyment</h4>
+                    <h2>Latest From <span>Our Blogs</span></h2>
+
+                    <div class="box-blogs">
+                        <div class="blog" v-for="blog in blogs">
+                            <img :src="'img/blog-' + blog.immagine" :alt="blog.tipo">
+
+                            <h4>{{ blog.tipo }}</h4>
+                            <h3>{{ blog.titolo }}</h3>
+    
+                        </div>
+                    </div>
+                </div>
             </section>
             <!--! /sezione blog -->
 
             <!-- ! sezione subscribe -->
-            <section id="subscribe"></section>
+            <section id="subscribe">
+                <div class="contenitore-subscribe">
+                    <div class="subscribe-testo">
+                        <h2>Subscribe <span>Newsletters</span></h2>
+                        <p>Enter your email address to register to our newsletter subscription delivered on a regular basis!</p>
+                    </div>
+
+                    <div class="input-subscribe">
+                        <input type="email" placeholder="Enter your email"><button>Subscribe</button>
+                    </div>
+
+                    <img class="decorazione-3" src="img/maxcoach-shape-02.png" alt="decorazione-3">
+
+                </div>
+            </section>
             <!-- ! /sezione subscribe -->
         </main>
         <!-- * /main -->

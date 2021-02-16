@@ -18,6 +18,23 @@ var app = new Vue({
                 costo: '$19.00',
                 descrizione: 'Open Programming for Everyone: Python'
             }
+        ],
+        blogs: [
+            {
+                immagine: '1.jpeg',
+                tipo: 'ARTIST',
+                titolo: 'Brush Strokes Energize Trees in Paintings'
+            },
+            {
+                immagine: '2.jpg',
+                tipo: 'ARTIST',
+                titolo: 'Pocket-Sized Notebooks Hold Miniature paitings'
+            },
+            {
+                immagine: '3.jpg',
+                tipo: 'ARTIST',
+                titolo: 'Connection Between Self-Portraits and Identity'
+            }
         ]
     }
 });
