@@ -294,7 +294,8 @@ main #blog {
 
 main #online-courses .contenitore-online-courses,
 main #blog .contenitore-blog,
-main #subscribe .contenitore-subscribe  {
+main #subscribe .contenitore-subscribe,
+footer .contenitore-footer  {
     width: 1200px;
     margin: auto;
     padding-top: 5rem;
@@ -504,6 +505,81 @@ main #subscribe .input-subscribe button {
 
 main #subscribe .decorazione-3 {
     position: absolute;
-    right: 20rem;
+    right: 18rem;
     top: 8rem;
+}
+
+/* * footer */
+footer {
+    width: 100%;
+    height: 20rem;
+    background-color: #141423;
+    color: #fff;
+}
+
+footer .contenitore-footer {
+    display: flex;
+    text-align: left;
+}
+
+footer .address {
+    width: calc(100% / 2);
+    line-height: 2;
+}
+
+footer .address .indirizzi,
+footer .information > div,
+footer .explore .contenitore-el {
+    font-size: 0.8rem;
+    color: #b1b1b1;
+}
+
+footer .address ul {
+    list-style: none;
+}
+
+footer .address ul li {
+    display: inline-block;
+    font-size: 1.3rem;
+}
+
+footer .address ul li:not(:first-child) {
+    padding-left: 1.5rem;
+}
+
+footer .explore,
+footer .information {
+    width: calc(100% / 5);
+    line-height: 2;
+}
+
+
+footer .explore .contenitore-el {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+    color: #b1b1b1;
+    padding-top: 3.5rem;
+}
+
+/* * bottoncino */
+.bottoncino {
+    position: absolute;
+    right: 3rem;
+    top: 336rem;
+    z-index: 998;
+}
+.bottoncino i {
+    padding: 1rem;
+    color: #fff;
+    background-color: #1fad95;
+    border-radius: 50%;
+    cursor: pointer;
 }

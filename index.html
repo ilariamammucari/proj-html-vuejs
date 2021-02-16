@@ -239,11 +239,53 @@
         <!-- * /main -->
 
         <!-- * footer -->
-        <footer></footer>
-        <!-- * /footer -->
+        <footer>
+            <div class="contenitore-footer">
+                <div class="address">
+                    <h4>Address</h4>
+                    <div class="indirizzi" v-for="indirizzo in indirizzi">
+                    {{ indirizzo }}
+                    </div>
+                    <ul>
+                        <li v-for="social in socials">
+                            <i :class="'fab fa-' + social.tipo"></i>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="explore">
+                    <h4>Explore</h4>
+                    <div class="contenitore-el">
+                        <div class="el-explore" v-for="elemento in esplora">
+                            {{ elemento }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information">
+                    <h4>Information</h4>
+                    <div v-for="informazione in informazioni">
+                        {{ informazione }}
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <small>
+                    <i class="far fa-copyright"></i> 2020 MaxCoach. All Rights reserved
+                </small>
+            </div>
+        </footer>
+        <!-- * /footer -->
     </div>
     <!-- * /contenitore -->
+
+    <!-- * bottoncino -->
+    <div class="bottoncino">
+        <a href="#root" title="Torna su"><i class="fas fa-arrow-up"></i>
+    </div>
+    <!-- * /bottoncino -->
+
     <script src="js/script.js"></script>
 </body>
 </html>

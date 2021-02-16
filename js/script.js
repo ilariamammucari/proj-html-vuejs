@@ -35,6 +35,23 @@ var app = new Vue({
                 tipo: 'ARTIST',
                 titolo: 'Connection Between Self-Portraits and Identity'
             }
-        ]
+        ],
+        indirizzi: ['328 Ne 19lst St # 87394 Miami, FL 33270-3899', '+1 (305) 547-9909 (9am - 5pm EST, Monday -Friday)', 'support@maxcoach.com'],
+        socials: [
+            {
+                tipo: 'facebook-square'
+            },
+            {
+                tipo: 'twitter'
+            },
+            {
+                tipo: 'instagram'
+            },
+            {
+                tipo: 'linkedin'
+            }
+        ],
+        esplora: ['Start here', 'Blog', 'About Us', 'Success story', 'Courses', 'Contact us'],
+        informazioni: ['Membership', 'Purchase guide', 'Privacy polocy', 'Terms of service']
     }
 });
