@@ -25,6 +25,7 @@ header {
     left: 0;
     top: 0;
     z-index: 9999;
+    box-shadow: 6px 6px 6px rgba(204, 203, 203, 0.5);
 }
 
 header .header-sx,
