@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #141423;
@@ -384,32 +388,61 @@ main #online-courses .box-corsi .free {
 /* * sezione people */
 main #people .card-people {
     width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 }
 
-main #people .card-people .box-card {
+main #people .card-people .box-card,
+main #people .card-people .box-card-sotto,
+main #people .card-people .box-card-sopra {
     width: 100%;
     height: 300px;
+    background-color: #fff;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.7);
     padding: 2rem 4rem;
+    z-index: 3;
 }
 
-main #people .card-people .box-card h4:first-child {
+main #people .card-people .box-card-sotto,
+main #people .card-people .box-card-sopra {
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+main #people .card-people .box-card-sopra {
+    top: -6.4rem;
+}
+
+main #people .card-people .box-card h4:first-child,
+main #people .card-people .box-card-sotto h4:first-child,
+main #people .card-people .box-card-sopra h4:first-child {
     color: black;
     font-weight: bold;
 }
 
-main #people .card-people .box-card .avatar {
+main #people .card-people .box-card .avatar,
+main #people .card-people .box-card-sotto .avatar,
+main #people .card-people .box-card-sopra .avatar {
     display: flex;
     align-items: center;
 }
 
-main #people .card-people .box-card .avatar img {
+main #people .card-people .box-card .avatar img,
+main #people .card-people .box-card-sotto .avatar img,
+main #people .card-people .box-card-sopra .avatar img {
     width: 20%;
     margin-top: 2rem;
     border-radius: 50%;
 }
 
-main #people .card-people .box-card .avatar h5 {
+main #people .card-people .box-card .avatar h5,
+main #people .card-people .box-card-sotto .avatar h5,
+main #people .card-people .box-card-sopra .avatar h5 {
     padding-left: 2rem;
 }
 
