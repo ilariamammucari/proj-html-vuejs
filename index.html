@@ -20,9 +20,8 @@
         <header>
             <!-- ! header-sx -->
             <div class="header-sx">
-                <div class="elementi-header-sx" v-for="elementi in listaHeaderSx">
-                    {{ elementi }}
-                    <i class="fas fa-angle-down"></i>
+                <div class="elementi-header-sx" v-for="elementi in sezioniPagina">
+                    <a :href="elementi.sezione">{{ elementi.nome }}</a>
                 </div>
             </div>
             <!-- ! /header-sx -->
@@ -42,6 +41,15 @@
                 <div class="casella-input">
                     <input type="text" placeholder="Search..">
                     <i class="fas fa-search"></i>
+                </div>
+
+            </div>
+            <div class="hamburger-menu" @click="dropDownMenu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="tendina" :class="visibile">
+                <div class="el-tendina" v-for="elementi in sezioniPagina">
+                    <a :href="elementi.sezione">{{ elementi.nome }}</a>
                 </div>
             </div>
             <!-- ! /header-dx -->
@@ -304,7 +312,7 @@
         <!-- * /main -->
 
         <!-- * footer -->
-        <footer>
+        <footer id="contacts">
             <div class="contenitore-footer">
                 <div class="address">
                     <h4>Address</h4>

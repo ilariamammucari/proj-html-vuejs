@@ -1,7 +1,36 @@
 var app = new Vue({
     el: '#root',
     data: {
-        listaHeaderSx: ['Home', 'Pages', 'Courses', 'Features', 'Blog', 'Shop'],
+        sezioniPagina: [
+            {
+                nome: 'Home',
+                sezione: '#root'
+            },
+            {
+                nome: 'Pages',
+                sezione: '#learn-about'
+            },
+            {
+                nome: 'Courses',
+                sezione: '#online-courses'
+            },
+            {
+                nome: 'Features',
+                sezione: '#people'
+            },
+            {
+                nome: 'Blog',
+                sezione: '#blog'
+            },
+            {
+                nome: 'Shop',
+                sezione: '#transform-you'
+            },
+            {
+                nome: 'Contacts',
+                sezione: '#contacts'
+            }
+        ],
         corsi: [
             {
                 immagine: '1',
@@ -66,7 +95,8 @@ var app = new Vue({
         esplora: ['Start here', 'Blog', 'About Us', 'Success story', 'Courses', 'Contact us'],
         informazioni: ['Membership', 'Purchase guide', 'Privacy polocy', 'Terms of service'],
         valoreEmail: '',
-        emails: []
+        emails: [],
+        visibile: 'hidden'
     },
     methods: {
         salvaEmails(){
@@ -78,6 +108,9 @@ var app = new Vue({
             }
             this.valoreEmail = ''
             console.log(this.emails);
+        },
+        dropDownMenu(){
+            this.visibile = ( this.visibile == 'hidden' ) ? 'show' : 'hidden';
         }
     }
 });
