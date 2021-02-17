@@ -80,15 +80,19 @@ var app = new Vue({
         indirizzi: ['328 Ne 19lst St # 87394 Miami, FL 33270-3899', '+1 (305) 547-9909 (9am - 5pm EST, Monday -Friday)', 'support@maxcoach.com'],
         socials: [
             {
+                prefisso: 'fab fa-',
                 tipo: 'facebook-square'
             },
             {
+                prefisso: 'fab fa-',
                 tipo: 'twitter'
             },
             {
+                prefisso: 'fab fa-',
                 tipo: 'instagram'
             },
             {
+                prefisso: 'fab fa-',
                 tipo: 'linkedin'
             }
         ],

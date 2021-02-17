@@ -50,6 +50,7 @@ header .header-sx .elementi-header-sx:not(:first-child) {
 
 header .header-sx .elementi-header-sx a {
     text-decoration: none;
+    color: #141423;
 }
 
 header .header-sx .elementi-header-sx a:hover {
@@ -118,18 +119,28 @@ header .hamburger-menu {
 }
 
 header .tendina {
-    width: 20%;
-    height: 20rem;
+    width: 300px;
+    height: 25rem;
     margin-top: 5rem;
     background-color: #fff;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
     position: absolute;
-    right: 12rem;
+    right: 15%;
+}
+
+header .tendina i {
+    float: right;
+    clear: both;
+    font-size: 1.3rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
 }
 
 header .tendina .el-tendina {
+    padding-top: 2rem;
     text-align: center;
-    line-height: 3.3rem;
+    line-height: 1.5rem;
 }
 
 header .tendina .el-tendina a {
@@ -674,6 +685,7 @@ footer .information > div,
 footer .explore .contenitore-el {
     font-size: 0.8rem;
     color: #b1b1b1;
+    cursor: pointer;
 }
 
 footer .address ul {
@@ -683,6 +695,7 @@ footer .address ul {
 footer .address ul li {
     display: inline-block;
     font-size: 1.3rem;
+    cursor: pointer;
 }
 
 footer .address ul li:not(:first-child) {
