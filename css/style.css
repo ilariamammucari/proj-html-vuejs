@@ -716,6 +716,12 @@ footer .explore .contenitore-el {
     cursor: pointer;
 }
 
+footer .address .indirizzi:hover,
+footer .information > div:hover,
+footer .explore .el-explore:hover {
+    color: #1fad95;
+}
+
 footer .address ul {
     list-style: none;
 }
@@ -724,6 +730,14 @@ footer .address ul li {
     display: inline-block;
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+footer ul li i {
+    color: #b1b1b1;
+}
+
+footer ul li i:hover {
+    color: #fff;
 }
 
 footer .address ul li:not(:first-child) {
