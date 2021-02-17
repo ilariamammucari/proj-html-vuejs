@@ -29,7 +29,7 @@ header {
     left: 0;
     top: 0;
     z-index: 9999;
-    box-shadow: 6px 6px 6px rgba(204, 203, 203, 0.5);
+    box-shadow: 6px 4px 6px rgba(204, 203, 203, 0.5);
 }
 
 header .header-sx,
@@ -90,6 +90,10 @@ header .header-dx i {
     cursor: pointer;
 }
 
+header .header-dx i:hover {
+    color: #1fad95;
+}
+
 header .header-dx i:last-child {
     position: absolute;
     top: 50%;
@@ -119,11 +123,12 @@ header .hamburger-menu {
 }
 
 header .tendina {
-    width: 300px;
-    height: 25rem;
+    width: 310px;
+    height: 27rem;
     margin-top: 5rem;
     background-color: #fff;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    border-bottom: 4px solid #1fad95;
     position: absolute;
     right: 15%;
 }
@@ -446,11 +451,34 @@ main #online-courses .box-corsi .free {
     text-align: center;
     line-height: 2rem;
     color: #fff;
-    background-color: coral;
+    background-color: #ee7455;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
     position: absolute;
     right: 0;
     top: 0;
 }
+
+main #online-courses .box-corsi .free::after,
+main #online-courses .box-corsi .free::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+}
+
+main #online-courses .box-corsi .free::after {
+    bottom: 0;
+    border-bottom: 20px solid #ee7455;
+}
+
+main #online-courses .box-corsi .free::before {
+    top: 0;
+    border-top: 20px solid #ee7455;
+}
+
 
 /* * sezione people */
 main #people .card-people {
